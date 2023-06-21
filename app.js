@@ -5,7 +5,7 @@ $('#inp').keypress(function(e)
     if(e.which===13)
     {
         const todoText = $('#inp').val();
-        $('#list').append(`<li><span>X</span> ${todoText}</li>`);
+        $('#list').append(`<li><span><i class="fas fa-trash-alt"></i></span> ${todoText}</li>`);
         $('#inp').val("");
     }
 });
